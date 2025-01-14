@@ -8,12 +8,15 @@
                     <a href="#" class="font-bold text-xl text-indigo-600">e-Mission</a>
                     <button
                         class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
-                        id="navbar-toggle">
+                        id="navbar-toggle" @click="isMenuOpen = !isMenuOpen">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
 
-                <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+                <div :class="[
+                    isMenuOpen ? 'block' : 'hidden',
+                    'flex flex-col md:flex md:flex-row md:ml-auto mt-3 md:mt-0'
+                ]" id="navbar-collapse">
                     <nuxt-link :to="`/`" class="p-2 lg:px-4 md:mx-2 text-white rounded bg-indigo-600">Home</nuxt-link>
                     <a href="#"
                         class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">About</a>
@@ -23,11 +26,6 @@
                         class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Pricing</a>
                     <nuxt-link :to="`/contact`"
                         class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Contact</nuxt-link>
-                    <!-- <a href="#"
-                        class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300">Login</a>
-                    <a href="#"
-                        class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Signup</a> -->
-
                     <select @change="switchLanguage" v-model="$i18n.locale"
                         class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded transition-colors duration-300 mt-1 md:mt-0 md:ml-1">
                         <option v-for="locale in $i18n.locales" :key="locale.code" :value="locale.code">
@@ -35,6 +33,7 @@
                         </option>
                     </select>
                 </div>
+
             </div>
         </nav>
 
@@ -139,6 +138,7 @@ import { useI18n } from 'vue-i18n';
 
 const router = useRouter();
 const { locale } = useI18n();
+const isMenuOpen = ref(false); // Track menu state
 
 // Switch language and update the route
 

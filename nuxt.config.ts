@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: ['@nuxtjs/i18n', '@nuxtjs/google-analytics'],
   css: ['~/styles/tailwind.css'],
+  plugins: ['~/plugins/vue-gtag.client.ts'],
+
   target: 'static', // Use 'static' for static hosting or 'server' for SSR
   ssr: true, // Set to true for server-side rendering
   build: {
@@ -14,12 +17,15 @@ export default defineNuxtConfig({
     },
   },
 
+  googleAnalytics: {
+    id: 'G-SV1D309D78' // Replace with your Measurement ID
+  },
+
   // Other configurations...
   nitro: {
     preset: 'vercel',
   },
 
-  modules: ['@nuxtjs/i18n'],
   i18n: {
     locales: [
       { code: 'en', iso: 'en-US', name: 'English' },

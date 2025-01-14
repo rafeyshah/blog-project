@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col min-h-screen">
         <!-- Header -->
-        <nav class="bg-white py-2 md:py-4">
+        <nav class="bg-white py-2 md:py-4 fixed top-0 left-0 w-full z-50">
             <div class="container px-4 mx-auto md:flex md:items-center">
 
                 <div class="flex justify-between items-center">
@@ -40,7 +40,7 @@
 
 
         <!-- Main Content -->
-        <main class="flex-1 container mx-auto p-6">
+        <main class="flex-1 mt-20 container mx-auto p-6">
             <slot />
         </main>
 

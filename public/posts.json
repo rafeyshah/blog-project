@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Getting Started with Nuxt.js",
+        "excerpt": "Nuxt.js is a powerful framework for building modern web applications...",
+        "content": "Nuxt.js is a powerful framework for building modern web applications. In this post, we'll explore the basics of getting started with Nuxt.js."
+    },
+    {
+        "id": 2,
+        "title": "Exploring TailwindCSS",
+        "excerpt": "TailwindCSS is a utility-first CSS framework that allows developers to create custom designs...",
+        "content": "TailwindCSS is a utility-first CSS framework that allows developers to create custom designs without leaving their HTML. This post dives deep into TailwindCSS features."
+    },
+    {
+        "id": 3,
+        "title": "JavaScript Fundamentals",
+        "excerpt": "JavaScript is the backbone of modern web development. Let's review the core concepts...",
+        "content": "JavaScript is the backbone of modern web development. This post covers variables, functions, and object manipulation in JavaScript."
+    },
+    {
+        "id": 4,
+        "title": "Building Reusable Components in Vue.js",
+        "excerpt": "Learn how to create reusable components in Vue.js to build maintainable apps...",
+        "content": "Creating reusable components is crucial for building maintainable apps. This post explains props, events, and slots in Vue.js."
+    },
+    {
+        "id": 5,
+        "title": "State Management with Vuex",
+        "excerpt": "Managing application state effectively is crucial. Vuex offers a powerful solution...",
+        "content": "Vuex is a state management library for Vue.js applications. This post introduces its core concepts and how to implement them."
+    },
+    {
+        "id": 6,
+        "title": "Deploying Nuxt.js Applications",
+        "excerpt": "Deploying a Nuxt.js app can be tricky. This guide will simplify the process...",
+        "content": "Deploying a Nuxt.js application is easier than you think. This post guides you through deploying on Netlify and Vercel."
+    },
+    {
+        "id": 7,
+        "title": "Understanding the Composition API",
+        "excerpt": "The Composition API revolutionized Vue.js development. Let's dive into its features...",
+        "content": "The Composition API offers a flexible way to manage state and logic in Vue.js apps. This post provides practical examples of its usage."
+    },
+    {
+        "id": 8,
+        "title": "Introduction to Server-Side Rendering",
+        "excerpt": "Server-side rendering enhances SEO and performance. Learn how to implement it in Nuxt.js...",
+        "content": "Server-side rendering (SSR) improves SEO and initial load times. This post explains how to enable and optimize SSR in Nuxt.js."
+    },
+    {
+        "id": 9,
+        "title": "Working with Nuxt Middleware",
+        "excerpt": "Middleware allows you to add logic to your routes. Let's explore its use cases...",
+        "content": "Nuxt.js middleware provides a way to handle authentication, logging, and route-specific logic. This post demonstrates common use cases."
+    },
+    {
+        "id": 10,
+        "title": "Integrating APIs in Nuxt.js",
+        "excerpt": "Connecting your Nuxt app to APIs opens endless possibilities. Here's how to get started...",
+        "content": "Integrating APIs is a common need in modern applications. This post shows how to fetch data and display it dynamically in Nuxt.js."
+    }
+]

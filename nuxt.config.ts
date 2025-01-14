@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/i18n', '@nuxtjs/google-analytics'],
+  modules: ['@nuxtjs/i18n'],
   css: ['~/styles/tailwind.css'],
   plugins: ['~/plugins/vue-gtag.client.ts'],
 
@@ -13,17 +13,12 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       tailwindcss: {},
-      autoprefixer: {},
-    },
+      autoprefixer: {}
+    }
   },
 
-  googleAnalytics: {
-    id: 'G-SV1D309D78' // Replace with your Measurement ID
-  },
-
-  // Other configurations...
   nitro: {
-    preset: 'vercel',
+    preset: 'vercel'
   },
 
   i18n: {
@@ -35,8 +30,8 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     vueI18n: './i18n.config.js',
-    strategy: 'prefix', // Add the language code to the URL
+    strategy: 'prefix' // Add the language code to the URL
   },
 
-  compatibilityDate: '2025-01-14',
+  compatibilityDate: '2025-01-14'
 });

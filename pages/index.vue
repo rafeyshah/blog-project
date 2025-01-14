@@ -18,10 +18,10 @@
             {{ error }}
         </div>
 
-        <!-- Filtered Posts -->
+        <!-- Paginated Posts -->
         <div v-else>
             <ul class="space-y-4">
-                <li v-for="post in filteredPosts" :key="post.id" class="p-4 border rounded-md shadow">
+                <li v-for="post in paginatedPosts" :key="post.id" class="p-4 border rounded-md shadow">
                     <h2 class="text-2xl font-semibold">{{ post.title }}</h2>
                     <p class="text-gray-700">{{ post.excerpt }}</p>
                     <nuxt-link :to="`/posts/${post.id}`" class="text-blue-600 hover:underline mt-2 inline-block">
@@ -29,8 +29,18 @@
                     </nuxt-link>
                 </li>
             </ul>
-            <div v-if="filteredPosts.length === 0" class="text-gray-500 mt-4">
-                No posts match your search.
+
+            <!-- Pagination Controls -->
+            <div class="flex justify-center items-center mt-6 space-x-2">
+                <button @click="currentPage--" :disabled="currentPage === 1"
+                    class="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 disabled:opacity-50">
+                    Previous
+                </button>
+                <span>Page {{ currentPage }} of {{ totalPages }}</span>
+                <button @click="currentPage++" :disabled="currentPage === totalPages"
+                    class="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 disabled:opacity-50">
+                    Next
+                </button>
             </div>
         </div>
     </div>
@@ -43,7 +53,9 @@ import { usePosts } from '~/composables/usePosts';
 const posts = ref([]);
 const loading = ref(true);
 const error = ref(null);
-const searchQuery = ref(''); // User input for search
+const searchQuery = ref('');
+const currentPage = ref(1);
+const postsPerPage = 5; // Number of posts per page
 
 onMounted(async () => {
     try {
@@ -55,12 +67,21 @@ onMounted(async () => {
     }
 });
 
-// Computed property for filtered posts
+// Filtered posts based on search query
 const filteredPosts = computed(() => {
     if (!searchQuery.value) return posts.value;
     return posts.value.filter(post =>
         post.title.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
         post.excerpt.toLowerCase().includes(searchQuery.value.toLowerCase())
     );
+});
+
+// Total pages
+const totalPages = computed(() => Math.ceil(filteredPosts.value.length / postsPerPage));
+
+// Paginated posts for the current page
+const paginatedPosts = computed(() => {
+    const start = (currentPage.value - 1) * postsPerPage;
+    return filteredPosts.value.slice(start, start + postsPerPage);
 });
 </script>

@@ -14,11 +14,17 @@
 
                 <!-- Standard Menu for Medium+ Screens -->
                 <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0">
-                    <nuxt-link :to="`/`" class="p-2 lg:px-4 md:mx-2 text-white rounded bg-indigo-600">
+                    <nuxt-link :to="`/`" :class="[
+                        'p-2 lg:px-4 md:mx-2 rounded transition-colors duration-300',
+                        isActiveBasePath('') ? 'text-white bg-indigo-600' : 'text-gray-600 hover:bg-gray-200 hover:text-gray-700'
+                    ]">
                         Home
                     </nuxt-link>
-                    <nuxt-link :to="`/contact`"
-                        class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">
+
+                    <nuxt-link :to="`/contact`" :class="[
+                        'p-2 lg:px-4 md:mx-2 rounded transition-colors duration-300',
+                        isActiveBasePath('/contact') ? 'text-white bg-indigo-600' : 'text-gray-600 hover:bg-gray-200 hover:text-gray-700'
+                    ]">
                         Contact
                     </nuxt-link>
 
@@ -52,12 +58,18 @@
             ]">
                 <ul class="mt-20">
                     <li>
-                        <nuxt-link :to="`/`" class="block px-6 py-4 text-indigo-600">
+                        <nuxt-link :to="`/`" :class="[
+                            'block px-6 py-4 transition-colors duration-300',
+                            isActiveBasePath('') ? 'text-indigo-600' : 'text-gray-600'
+                        ]">
                             Home
                         </nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link :to="`/contact`" class="block px-6 py-4 text-gray-600">
+                        <nuxt-link :to="`/contact`" :class="[
+                            'block px-6 py-4 transition-colors duration-300',
+                            isActiveBasePath('/contact') ? 'text-indigo-600' : 'text-gray-600'
+                        ]">
                             Contact
                         </nuxt-link>
                     </li>
@@ -189,6 +201,15 @@ const isMenuOpen = ref(false);
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
 };
+
+const isActiveBasePath = (basePath) => {
+    // Extract the path after the language prefix
+    const currentPath = router.currentRoute.value.path.replace(/^\/[a-z]{2}/, ''); // e.g., `/en/home` -> `/home`
+    console.log("Current Path: ", currentPath)
+    console.log("Base Path: ", basePath)
+    return currentPath === basePath;
+};
+
 
 // Switch language and update the route
 

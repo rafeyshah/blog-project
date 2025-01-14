@@ -5,10 +5,10 @@
             <div class="container px-4 mx-auto md:flex md:items-center">
                 <div class="flex justify-between items-center">
                     <a href="#" class="font-bold text-xl text-indigo-600">e-Mission</a>
-                    <button
-                        class="px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+                    <button class="px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
                         id="navbar-toggle" @click="toggleMenu">
-                        <font-awesome-icon icon="bars" class="text-indigo-600 text-xl border border-indigo-600 p-2 rounded"  />
+                        <font-awesome-icon icon="bars"
+                            class="text-indigo-600 text-xl border border-indigo-600 p-2 rounded" />
                     </button>
                 </div>
 
@@ -17,22 +17,23 @@
                     <nuxt-link :to="`/`" class="p-2 lg:px-4 md:mx-2 text-white rounded bg-indigo-600">
                         Home
                     </nuxt-link>
-                    <a href="#"
-                        class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">
-                        About
-                    </a>
-                    <a href="#"
-                        class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">
-                        Features
-                    </a>
-                    <a href="#"
-                        class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">
-                        Pricing
-                    </a>
                     <nuxt-link :to="`/contact`"
                         class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">
                         Contact
                     </nuxt-link>
+
+                    <div class="flex items-center">
+                        <div v-for="(locale, index) in $i18n.locales" :key="locale.code" class="flex items-center">
+                            <!-- Language Button -->
+                            <button @click="switchLanguage(locale.code)" class="px-2 py-2 border-b-2"
+                                :class="locale.code === $i18n.locale ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-gray-600 hover:border-gray-400'">
+                                {{ locale.code.toUpperCase() }}
+                            </button>
+
+                            <!-- Separator | -->
+                            <span v-if="index < $i18n.locales.length - 1" class="px-1 text-gray-400">|</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -56,24 +57,27 @@
                         </nuxt-link>
                     </li>
                     <li>
-                        <a href="#" class="block px-6 py-4 text-gray-600 hover:bg-gray-100 transition">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-6 py-4 text-gray-600 hover:bg-gray-100 transition">
-                            Features
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-6 py-4 text-gray-600 hover:bg-gray-100 transition">
-                            Pricing
-                        </a>
-                    </li>
-                    <li>
                         <nuxt-link :to="`/contact`" class="block px-6 py-4 text-gray-600">
                             Contact
                         </nuxt-link>
+                    </li>
+                    <li>
+                        <div class="block px-4 py-2 text-gray-600">
+                            <div class="flex items-center">
+                                <div v-for="(locale, index) in $i18n.locales" :key="locale.code"
+                                    class="flex items-center">
+                                    <!-- Language Button -->
+                                    <button @click="switchLanguage(locale.code)" class="px-2 py-2 border-b-2"
+                                        :class="locale.code === $i18n.locale ? 'border-indigo-600 text-indigo-600 font-bold' : 'border-transparent hover:border-gray-400'">
+                                        {{ locale.code.toUpperCase() }}
+                                    </button>
+
+                                    <!-- Separator | -->
+                                    <span v-if="index < $i18n.locales.length - 1" class="px-1 text-gray-400">|</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </li>
                 </ul>
             </div>
@@ -188,15 +192,19 @@ const toggleMenu = () => {
 
 // Switch language and update the route
 
-const switchLanguage = () => {
+const switchLanguage = (newLocale) => {
     const currentRoute = router.currentRoute.value;
-    const newLocale = locale.value;
+
+    // Update Vue I18n locale
+    locale.value = newLocale;
 
     console.log("Switching language to:", newLocale);
 
+    // Update the route
     router.push({
-        path: `/${newLocale}${currentRoute.fullPath.replace(/^\/[^/]+/, '')}`
+        path: `/${newLocale}${currentRoute.fullPath.replace(/^\/[^/]+/, '')}`,
     });
-
 };
+
+
 </script>

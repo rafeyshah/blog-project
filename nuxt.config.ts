@@ -1,8 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ['~/styles/tailwind.css'],
-  // target: 'static', // Important to build the app as a static site
-  // buildDir: 'dist',
+  target: 'static', // Use 'static' for static hosting or 'server' for SSR
+  ssr: true, // Set to true for server-side rendering
+  build: {
+    analyze: true // Optional: Analyze bundle size
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},

@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   css: ['~/styles/tailwind.css'],
   // target: 'static', // Important to build the app as a static site
-  buildDir: 'dist',
+  // buildDir: 'dist',
   postcss: {
     plugins: {
       tailwindcss: {},

@@ -23,13 +23,22 @@
                         class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Pricing</a>
                     <a href="#"
                         class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Contact</a>
-                    <a href="#"
+                    <!-- <a href="#"
                         class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300">Login</a>
                     <a href="#"
-                        class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Signup</a>
+                        class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Signup</a> -->
+
+
+                    <select @change="switchLanguage" v-model="$i18n.locale"
+                        class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded transition-colors duration-300 mt-1 md:mt-0 md:ml-1">
+                        <option v-for="locale in $i18n.locales" :key="locale.code" :value="locale.code">
+                            {{ locale.name }}
+                        </option>
+                    </select>
                 </div>
             </div>
         </nav>
+
 
         <!-- Main Content -->
         <main class="flex-1 container mx-auto p-6">
@@ -180,3 +189,25 @@
 
     </div>
 </template>
+
+<script setup>
+import { useRouter } from 'vue-router';
+import { useI18n } from 'vue-i18n';
+
+const router = useRouter();
+const { locale } = useI18n();
+
+// Switch language and update the route
+
+const switchLanguage = () => {
+    const currentRoute = router.currentRoute.value;
+    const newLocale = locale.value;
+
+    console.log("Switching language to:", newLocale);
+
+    router.push({
+        path: `/${newLocale}${currentRoute.fullPath.replace(/^\/[^/]+/, '')}`
+    });
+
+};
+</script>

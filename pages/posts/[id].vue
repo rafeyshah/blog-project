@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nuxt-link to="/" class="text-blue-600 hover:underline">&larr; Back to Home</nuxt-link>
+        <nuxt-link to="/" class="text-blue-600 hover:underline">&larr; {{ $t('backToHome') }}</nuxt-link>
         <div v-if="loading" class="mt-4 flex justify-center">
             <div class="animate-spin rounded-full h-12 w-12 border-t-4 border-blue-600"></div>
         </div>
@@ -15,26 +15,40 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import { useRoute } from 'vue-router';
-import { usePosts } from '~/composables/usePosts';
+import { ref, onMounted, watch } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+import { useI18n } from 'vue-i18n';
 
 const route = useRoute();
+const router = useRouter();
+const { locale } = useI18n(); // Access the current locale
 const post = ref(null);
 const loading = ref(true);
 const error = ref(null);
 
-
-onMounted(async () => {
+const fetchPost = async () => {
+    loading.value = true;
     try {
-        const posts = await usePosts();
+        const response = await fetch('/posts.json');
+        if (!response.ok) throw new Error('Failed to fetch posts');
+        const posts = await response.json();
         post.value = posts.find(p => p.id === parseInt(route.params.id));
-        if (!post.value) throw new Error('Post not found');
+        if (post.value) {
+            post.value = {
+                title: post.value.title[locale.value],
+                content: post.value.content[locale.value]
+            };
+        } else {
+            throw new Error('Post not found');
+        }
     } catch (err) {
         error.value = err.message;
     } finally {
         loading.value = false;
     }
-});
+};
 
+// Fetch post data on route change or locale change
+onMounted(fetchPost);
+watch([() => route.params.id, locale], fetchPost);
 </script>

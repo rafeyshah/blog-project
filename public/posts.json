@@ -1,62 +1,152 @@
 [
     {
         "id": 1,
-        "title": "Getting Started with Nuxt.js",
-        "excerpt": "Nuxt.js is a powerful framework for building modern web applications...",
-        "content": "Nuxt.js is a powerful framework for building modern web applications. In this post, we'll explore the basics of getting started with Nuxt.js."
+        "title": {
+            "en": "Getting Started with Nuxt.js",
+            "fr": "Commencer avec Nuxt.js",
+            "es": "Comenzando con Nuxt.js",
+            "de": "Einstieg in Nuxt.js"
+        },
+        "content": {
+            "en": "Nuxt.js is a powerful framework for building modern web applications.Nuxt.js is a powerful framework for building modern web applications.Nuxt.js is a powerful framework for building modern web applications.Nuxt.js is a powerful framework for building modern web applications.Nuxt.js is a powerful framework for building modern web applications.Nuxt.js is a powerful framework for building modern web applications.Nuxt.js is a powerful framework for building modern web applications.",
+            "fr": "Nuxt.js est un framework puissant pour créer des applications web modernes.Nuxt.js est un framework puissant pour créer des applications web modernes.Nuxt.js est un framework puissant pour créer des applications web modernes.Nuxt.js est un framework puissant pour créer des applications web modernes.Nuxt.js est un framework puissant pour créer des applications web modernes.Nuxt.js est un framework puissant pour créer des applications web modernes.Nuxt.js est un framework puissant pour créer des applications web modernes.Nuxt.js est un framework puissant pour créer des applications web modernes.",
+            "es": "Nuxt.js es un marco poderoso para construir aplicaciones web modernas.Nuxt.js es un marco poderoso para construir aplicaciones web modernas.Nuxt.js es un marco poderoso para construir aplicaciones web modernas.Nuxt.js es un marco poderoso para construir aplicaciones web modernas.Nuxt.js es un marco poderoso para construir aplicaciones web modernas.Nuxt.js es un marco poderoso para construir aplicaciones web modernas.Nuxt.js es un marco poderoso para construir aplicaciones web modernas.Nuxt.js es un marco poderoso para construir aplicaciones web modernas.Nuxt.js es un marco poderoso para construir aplicaciones web modernas.Nuxt.js es un marco poderoso para construir aplicaciones web modernas.Nuxt.js es un marco poderoso para construir aplicaciones web modernas.",
+            "de": "Nuxt.js ist ein leistungsstarkes Framework zum Erstellen moderner Webanwendungen.Nuxt.js ist ein leistungsstarkes Framework zum Erstellen moderner Webanwendungen.Nuxt.js ist ein leistungsstarkes Framework zum Erstellen moderner Webanwendungen.Nuxt.js ist ein leistungsstarkes Framework zum Erstellen moderner Webanwendungen.Nuxt.js ist ein leistungsstarkes Framework zum Erstellen moderner Webanwendungen.Nuxt.js ist ein leistungsstarkes Framework zum Erstellen moderner Webanwendungen.Nuxt.js ist ein leistungsstarkes Framework zum Erstellen moderner Webanwendungen.Nuxt.js ist ein leistungsstarkes Framework zum Erstellen moderner Webanwendungen.Nuxt.js ist ein leistungsstarkes Framework zum Erstellen moderner Webanwendungen.Nuxt.js ist ein leistungsstarkes Framework zum Erstellen moderner Webanwendungen.Nuxt.js ist ein leistungsstarkes Framework zum Erstellen moderner Webanwendungen."
+        }
     },
     {
         "id": 2,
-        "title": "Exploring TailwindCSS",
-        "excerpt": "TailwindCSS is a utility-first CSS framework that allows developers to create custom designs...",
-        "content": "TailwindCSS is a utility-first CSS framework that allows developers to create custom designs without leaving their HTML. This post dives deep into TailwindCSS features."
+        "title": {
+            "en": "Exploring TailwindCSS",
+            "fr": "Explorer TailwindCSS",
+            "es": "Explorando TailwindCSS",
+            "de": "Erkundung von TailwindCSS"
+        },
+        "content": {
+            "en": "TailwindCSS is a utility-first CSS framework for creating custom designs.TailwindCSS is a utility-first CSS framework for creating custom designs.TailwindCSS is a utility-first CSS framework for creating custom designs.TailwindCSS is a utility-first CSS framework for creating custom designs.TailwindCSS is a utility-first CSS framework for creating custom designs.TailwindCSS is a utility-first CSS framework for creating custom designs.TailwindCSS is a utility-first CSS framework for creating custom designs.TailwindCSS is a utility-first CSS framework for creating custom designs.TailwindCSS is a utility-first CSS framework for creating custom designs.TailwindCSS is a utility-first CSS framework for creating custom designs.TailwindCSS is a utility-first CSS framework for creating custom designs.TailwindCSS is a utility-first CSS framework for creating custom designs.",
+            "fr": "TailwindCSS est un framework CSS orienté utilitaire pour créer des designs personnalisés.TailwindCSS est un framework CSS orienté utilitaire pour créer des designs personnalisés.TailwindCSS est un framework CSS orienté utilitaire pour créer des designs personnalisés.TailwindCSS est un framework CSS orienté utilitaire pour créer des designs personnalisés.TailwindCSS est un framework CSS orienté utilitaire pour créer des designs personnalisés.TailwindCSS est un framework CSS orienté utilitaire pour créer des designs personnalisés.TailwindCSS est un framework CSS orienté utilitaire pour créer des designs personnalisés.TailwindCSS est un framework CSS orienté utilitaire pour créer des designs personnalisés.TailwindCSS est un framework CSS orienté utilitaire pour créer des designs personnalisés.TailwindCSS est un framework CSS orienté utilitaire pour créer des designs personnalisés.",
+            "es": "TailwindCSS es un marco de CSS orientado a utilidades para crear diseños personalizados.TailwindCSS es un marco de CSS orientado a utilidades para crear diseños personalizados.TailwindCSS es un marco de CSS orientado a utilidades para crear diseños personalizados.TailwindCSS es un marco de CSS orientado a utilidades para crear diseños personalizados.TailwindCSS es un marco de CSS orientado a utilidades para crear diseños personalizados.TailwindCSS es un marco de CSS orientado a utilidades para crear diseños personalizados.TailwindCSS es un marco de CSS orientado a utilidades para crear diseños personalizados.TailwindCSS es un marco de CSS orientado a utilidades para crear diseños personalizados.TailwindCSS es un marco de CSS orientado a utilidades para crear diseños personalizados.TailwindCSS es un marco de CSS orientado a utilidades para crear diseños personalizados.TailwindCSS es un marco de CSS orientado a utilidades para crear diseños personalizados.",
+            "de": "TailwindCSS ist ein Utility-First-CSS-Framework zum Erstellen von benutzerdefinierten Designs.TailwindCSS ist ein Utility-First-CSS-Framework zum Erstellen von benutzerdefinierten Designs.TailwindCSS ist ein Utility-First-CSS-Framework zum Erstellen von benutzerdefinierten Designs.TailwindCSS ist ein Utility-First-CSS-Framework zum Erstellen von benutzerdefinierten Designs.TailwindCSS ist ein Utility-First-CSS-Framework zum Erstellen von benutzerdefinierten Designs.TailwindCSS ist ein Utility-First-CSS-Framework zum Erstellen von benutzerdefinierten Designs.TailwindCSS ist ein Utility-First-CSS-Framework zum Erstellen von benutzerdefinierten Designs.TailwindCSS ist ein Utility-First-CSS-Framework zum Erstellen von benutzerdefinierten Designs.TailwindCSS ist ein Utility-First-CSS-Framework zum Erstellen von benutzerdefinierten Designs.TailwindCSS ist ein Utility-First-CSS-Framework zum Erstellen von benutzerdefinierten Designs."
+        }
     },
     {
         "id": 3,
-        "title": "JavaScript Fundamentals",
-        "excerpt": "JavaScript is the backbone of modern web development. Let's review the core concepts...",
-        "content": "JavaScript is the backbone of modern web development. This post covers variables, functions, and object manipulation in JavaScript."
+        "title": {
+            "en": "JavaScript Fundamentals",
+            "fr": "Les fondamentaux de JavaScript",
+            "es": "Fundamentos de JavaScript",
+            "de": "Grundlagen von JavaScript"
+        },
+        "content": {
+            "en": "JavaScript is the backbone of modern web development. Let's review the core concepts.",
+            "fr": "JavaScript est la colonne vertébrale du développement web moderne. Passons en revue les concepts fondamentaux.",
+            "es": "JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos.",
+            "de": "JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen."
+        }
     },
     {
         "id": 4,
-        "title": "Building Reusable Components in Vue.js",
-        "excerpt": "Learn how to create reusable components in Vue.js to build maintainable apps...",
-        "content": "Creating reusable components is crucial for building maintainable apps. This post explains props, events, and slots in Vue.js."
+        "title": {
+            "en": "Building Reusable Components in Vue.js",
+            "fr": "Créer des composants réutilisables dans Vue.js",
+            "es": "Construyendo componentes reutilizables en Vue.js",
+            "de": "Erstellen wiederverwendbarer Komponenten in Vue.js"
+        },
+        "content": {
+            "en": "Learn how to create reusable components in Vue.js to build maintainable apps.",
+            "fr": "Apprenez à créer des composants réutilisables dans Vue.js pour construire des applications maintenables.",
+            "es": "Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.",
+            "de": "Erfahren Sie, wie Sie wiederverwendbare Komponenten in Vue.js erstellen, um wartbare Apps zu entwickeln."
+        }
     },
     {
         "id": 5,
-        "title": "State Management with Vuex",
-        "excerpt": "Managing application state effectively is crucial. Vuex offers a powerful solution...",
-        "content": "Vuex is a state management library for Vue.js applications. This post introduces its core concepts and how to implement them."
+        "title": {
+            "en": "State Management with Vuex",
+            "fr": "Gestion d'état avec Vuex",
+            "es": "Gestión de estado con Vuex",
+            "de": "Zustandsverwaltung mit Vuex"
+        },
+        "content": {
+            "en": "Managing application state effectively is crucial. Vuex offers a powerful solution.",
+            "fr": "Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.",
+            "es": "Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa.",
+            "de": "Das effektive Verwalten des Anwendungszustands ist entscheidend. Vuex bietet eine leistungsstarke Lösung."
+        }
     },
     {
         "id": 6,
-        "title": "Deploying Nuxt.js Applications",
-        "excerpt": "Deploying a Nuxt.js app can be tricky. This guide will simplify the process...",
-        "content": "Deploying a Nuxt.js application is easier than you think. This post guides you through deploying on Netlify and Vercel."
+        "title": {
+            "en": "Deploying Nuxt.js Applications",
+            "fr": "Déployer des applications Nuxt.js",
+            "es": "Desplegando aplicaciones Nuxt.js",
+            "de": "Bereitstellung von Nuxt.js-Anwendungen"
+        },
+        "content": {
+            "en": "Deploying a Nuxt.js app can be tricky. This guide will simplify the process.",
+            "fr": "Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.",
+            "es": "Desplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el proceso.",
+            "de": "Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess."
+        }
     },
     {
         "id": 7,
-        "title": "Understanding the Composition API",
-        "excerpt": "The Composition API revolutionized Vue.js development. Let's dive into its features...",
-        "content": "The Composition API offers a flexible way to manage state and logic in Vue.js apps. This post provides practical examples of its usage."
+        "title": {
+            "en": "Understanding the Composition API",
+            "fr": "Comprendre l'API Composition",
+            "es": "Entendiendo la API de Composición",
+            "de": "Verstehen der Composition API"
+        },
+        "content": {
+            "en": "The Composition API revolutionized Vue.js development. Let's dive into its features.",
+            "fr": "L'API Composition a révolutionné le développement avec Vue.js. Explorons ses fonctionnalités.",
+            "es": "La API de Composición revolucionó el desarrollo de Vue.js. Vamos a explorar sus características.",
+            "de": "Die Composition API hat die Entwicklung mit Vue.js revolutioniert. Lassen Sie uns ihre Funktionen erkunden."
+        }
     },
     {
         "id": 8,
-        "title": "Introduction to Server-Side Rendering",
-        "excerpt": "Server-side rendering enhances SEO and performance. Learn how to implement it in Nuxt.js...",
-        "content": "Server-side rendering (SSR) improves SEO and initial load times. This post explains how to enable and optimize SSR in Nuxt.js."
+        "title": {
+            "en": "Introduction to Server-Side Rendering",
+            "fr": "Introduction au rendu côté serveur",
+            "es": "Introducción al renderizado del lado del servidor",
+            "de": "Einführung in das Server-Side Rendering"
+        },
+        "content": {
+            "en": "Server-side rendering enhances SEO and performance. Learn how to implement it in Nuxt.js.",
+            "fr": "Le rendu côté serveur améliore le SEO et les performances. Apprenez à l'implémenter dans Nuxt.js.",
+            "es": "El renderizado del lado del servidor mejora el SEO y el rendimiento. Aprende a implementarlo en Nuxt.js.",
+            "de": "Serverseitiges Rendering verbessert SEO und Leistung. Erfahren Sie, wie Sie es in Nuxt.js implementieren."
+        }
     },
     {
         "id": 9,
-        "title": "Working with Nuxt Middleware",
-        "excerpt": "Middleware allows you to add logic to your routes. Let's explore its use cases...",
-        "content": "Nuxt.js middleware provides a way to handle authentication, logging, and route-specific logic. This post demonstrates common use cases."
+        "title": {
+            "en": "Working with Nuxt Middleware",
+            "fr": "Travailler avec le middleware Nuxt",
+            "es": "Trabajando con middleware de Nuxt",
+            "de": "Arbeiten mit Nuxt-Middleware"
+        },
+        "content": {
+            "en": "Middleware allows you to add logic to your routes. Let's explore its use cases.",
+            "fr": "Le middleware vous permet d'ajouter de la logique à vos routes. Explorons ses cas d'utilisation.",
+            "es": "El middleware te permite añadir lógica a tus rutas. Exploremos sus casos de uso.",
+            "de": "Middleware ermöglicht es Ihnen, Logik zu Ihren Routen hinzuzufügen. Lassen Sie uns ihre Anwendungsfälle erkunden."
+        }
     },
     {
         "id": 10,
-        "title": "Integrating APIs in Nuxt.js",
-        "excerpt": "Connecting your Nuxt app to APIs opens endless possibilities. Here's how to get started...",
-        "content": "Integrating APIs is a common need in modern applications. This post shows how to fetch data and display it dynamically in Nuxt.js."
+        "title": {
+            "en": "Integrating APIs in Nuxt.js",
+            "fr": "Intégrer des APIs dans Nuxt.js",
+            "es": "Integrar APIs en Nuxt.js",
+            "de": "APIs in Nuxt.js integrieren"
+        },
+        "content": {
+            "en": "Connecting your Nuxt app to APIs opens endless possibilities. Here's how to get started.",
+            "fr": "Connecter votre application Nuxt à des APIs ouvre des possibilités infinies. Voici comment commencer.",
+            "es": "Conectar tu aplicación Nuxt a APIs abre posibilidades infinitas. Aquí tienes cómo empezar.",
+            "de": "Das Verbinden Ihrer Nuxt-App mit APIs eröffnet endlose Möglichkeiten. Hier erfahren Sie, wie Sie anfangen können."
+        }
     }
 ]

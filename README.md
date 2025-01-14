@@ -1,75 +1,66 @@
-# Nuxt Minimal Starter
+# e Mission: Multilingual Blog
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A multilingual blog built with **Nuxt.js 3**, featuring **TailwindCSS**, **Google Analytics integration**, **Dynamic Routing**, **Form Validation**, and **Support for Multiple Languages**.
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- **Multilingual Support**:
+  - Supported languages: English, French, Spanish, German.
+  - Language-specific routes (e.g., `/en`, `/fr`).
+  - Seamless language switching with dynamic route updates.
 
-```bash
-# npm
-npm install
+- **Dynamic Blog Posts**:
+  - JSON-based blog content with translations.
+  - Routes like `/en/posts/:id` dynamically render post content.
+  - Paginated list of blog posts with search functionality.
 
-# pnpm
-pnpm install
+- **Contact Form**:
+  - Fields: Name, Email, Phone Number, Message.
+  - Basic validation for required fields and proper formats (email, phone).
+  - Real-time error messages for invalid inputs.
 
-# yarn
-yarn install
+- **Google Analytics Integration**:
+  - Tracks page views and custom events.
+  - Implemented using the `vue-gtag-next` library.
 
-# bun
-bun install
-```
+## Technologies Used
 
-## Development Server
+- **Nuxt.js 3**: Framework for server-side rendering and static site generation.
+- **Vue.js 3**: Reactive UI framework.
+- **TailwindCSS**: Utility-first CSS framework.
+- **vue-gtag-next**: Google Analytics integration for Vue 3.
+- **PostCSS**: CSS transformations and optimizations.
 
-Start the development server on `http://localhost:3000`:
+## Project Setup
 
-```bash
-# npm
-npm run dev
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
 
-# pnpm
-pnpm dev
+2. Install dependencies:
+    ```bash
+    npm install
 
-# yarn
-yarn dev
+3. Run the development server:
+   ```bash
+    npm run dev
 
-# bun
-bun run dev
-```
+## Folder Structure
+- **/pages**: Contains page components, including blog (***posts***) and contact form.
+- **/plugins**: Google Analytics initialization (***vue-gtag.client.ts***).
+- **/public**: Static files like ***posts.json*** with localized blog content.
+- **/styles**: TailwindCSS configuration.
 
-## Production
+## Customization
+- **Blog Content**: Modify *public/posts.json* for blog posts in all supported languages.
+- **Google Analytics**: Replace the Measurement ID in *plugins/vue-gtag.client.ts* with your own.
 
-Build the application for production:
+## Deployment
+The project is configured for static hosting on platforms like Vercel.
+[e Mission: Blog Website](https://blog-project-qk70kgq2y-syed-abdul-rafey-alis-projects.vercel.app/en)
 
-```bash
-# npm
-npm run build
 
-# pnpm
-pnpm build
+Happy coding! 🚀
 
-# yarn
-yarn build
 
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

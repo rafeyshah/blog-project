@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 
   // Other configurations...
   nitro: {
-    preset: 'node-server',
+    preset: 'vercel',
   },
 
   modules: ['@nuxtjs/i18n'],

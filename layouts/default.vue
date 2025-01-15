@@ -99,7 +99,7 @@
 
 
         <!-- Main Content -->
-        <main class="flex-1 mt-20 container mx-auto p-6">
+        <main class="flex-1 mt-10 container mx-auto p-6">
             <slot />
         </main>
 

@@ -1,10 +1,5 @@
 <template>
     <div>
-        <!-- Search Bar -->
-        <div class="mb-6">
-            <input v-model="searchQuery" :placeholder="$t('searchPlaceholder')" class="w-full p-2 border rounded-md" />
-        </div>
-
         <section class="py-24 ">
             <!-- Paginated and Filtered Posts -->
             <div v-if="loading" class="mt-4 flex justify-center">
@@ -14,7 +9,20 @@
                 {{ error }}
             </div>
             <div v-else class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h2 class="font-manrope text-4xl font-bold text-gray-900 text-center mb-16">{{ $t('welcome') }}</h2>
+                <div class="flex flex-wrap justify-between items-center mb-6 gap-4">
+                    <!-- Left Side: Welcome -->
+                    <h2
+                        class="font-manrope text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 w-full md:w-auto text-center md:text-left">
+                        {{ $t('welcome') }}
+                    </h2>
+
+                    <!-- Right Side: Search Bar -->
+                    <div class="w-full md:w-1/3">
+                        <input v-model="searchQuery" :placeholder="$t('searchPlaceholder')"
+                            class="w-full p-2 border rounded-md" />
+                    </div>
+                </div>
+
                 <div
                     class="flex justify-center  gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
                     <div v-for="post in paginatedPosts" :key="post.id"
@@ -35,19 +43,53 @@
                         </div>
                     </div>
                 </div>
-                <span class="flex justify-center items-center mt-6 space-x-1">
-                    {{ $t('page') }} {{ currentPage }} {{ $t('of') }} {{ totalPages }}
-                </span>
-                <div class="flex justify-center items-center mt-6 space-x-1">
-                    <button @click="currentPage--" :disabled="currentPage === 1"
-                        class="px-6 py-2 border-2 border-indigo-500 text-indigo-600 rounded-md hover:bg-indigo-500 hover:text-white disabled:opacity-50 disabled:bg-indigo-500 disabled:text-white">
-                        {{ $t('previous') }}
-                    </button>
-                    <button @click="currentPage++" :disabled="currentPage === totalPages"
-                        class="px-6 py-2 border-2 border-indigo-500 text-indigo-600 rounded-md hover:bg-indigo-500 hover:text-white disabled:opacity-50 disabled:bg-indigo-500 disabled:text-white">
-                        {{ $t('next') }}
-                    </button>
+
+
+                <div class="flex items-center justify-center py-10 lg:px-0 sm:px-6 px-4">
+                    <div class="lg:w-3/5 w-full flex items-center justify-between border-t border-gray-200">
+                        <!-- Previous Button -->
+                        <div class="flex items-center pt-3 text-gray-600 hover:text-indigo-700 cursor-pointer"
+                            @click="currentPage > 1 && currentPage--"
+                            :class="{ 'opacity-50 cursor-not-allowed': currentPage === 1 }">
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.1665 4H12.8332" stroke="currentColor" stroke-width="1.25"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1.1665 4L4.49984 7.33333" stroke="currentColor" stroke-width="1.25"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1.1665 4.00002L4.49984 0.666687" stroke="currentColor" stroke-width="1.25"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p class="text-sm ml-3 font-medium leading-none">{{ $t('previous') }}</p>
+                        </div>
+
+                        <!-- Page Numbers -->
+                        <div class="sm:flex hidden">
+                            <span v-for="page in totalPages" :key="page" @click="currentPage = page"
+                                class="text-sm font-medium leading-none cursor-pointer text-gray-600 hover:text-indigo-700 border-t border-transparent hover:border-indigo-400 pt-3 mr-4 px-2"
+                                :class="{ 'text-indigo-700 border-indigo-400': currentPage === page }">
+                                {{ page }}
+                            </span>
+                        </div>
+
+                        <!-- Next Button -->
+                        <div class="flex items-center pt-3 text-gray-600 hover:text-indigo-700 cursor-pointer"
+                            @click="currentPage < totalPages && currentPage++"
+                            :class="{ 'opacity-50 cursor-not-allowed': currentPage === totalPages }">
+                            <p class="text-sm font-medium leading-none mr-3">{{ $t('next') }}</p>
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.1665 4H12.8332" stroke="currentColor" stroke-width="1.25"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.5 7.33333L12.8333 4" stroke="currentColor" stroke-width="1.25"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.5 0.666687L12.8333 4.00002" stroke="currentColor" stroke-width="1.25"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
+
 
             </div>
         </section>

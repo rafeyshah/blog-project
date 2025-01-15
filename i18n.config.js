@@ -3,7 +3,7 @@ export default {
     locale: 'en',
     messages: {
         en: {
-            welcome: 'Our latest blogs',
+            welcome: 'Our Latest Blogs',
             searchPlaceholder: 'Search posts...',
             previous: 'Prev',
             next: 'Next',

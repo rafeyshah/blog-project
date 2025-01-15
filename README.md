@@ -47,7 +47,8 @@ A multilingual blog built with **Nuxt.js 3**, featuring **TailwindCSS**, **Googl
     npm run dev
 
 ## Folder Structure
-- **/pages**: Contains page components, including blog (***posts***) and contact form.
+- **/components**: Contains Page reusable components.
+- **/pages**: Contains pages, including blog (***posts***) and contact form.
 - **/plugins**: Google Analytics initialization (***vue-gtag.client.ts***).
 - **/public**: Static files like ***posts.json*** with localized blog content.
 - **/styles**: TailwindCSS configuration.

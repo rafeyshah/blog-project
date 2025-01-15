@@ -1,0 +1,42 @@
+{
+    "en": {
+        "menu": {
+            "home": "Home",
+            "contact": "Contact"
+        },
+        "sections": {
+            "home": "Welcome to our blog! Explore the latest updates and stories.",
+            "contact": "Contact us through the form below. We would love to hear from you!"
+        }
+    },
+    "de": {
+        "menu": {
+            "home": "Startseite",
+            "contact": "Kontakt"
+        },
+        "sections": {
+            "home": "Willkommen in unserem Blog! Entdecken Sie die neuesten Updates und Geschichten.",
+            "contact": "Kontaktieren Sie uns über das untenstehende Formular. Wir freuen uns auf Ihre Nachricht!"
+        }
+    },
+    "fr": {
+        "menu": {
+            "home": "Accueil",
+            "contact": "Contact"
+        },
+        "sections": {
+            "home": "Bienvenue sur notre blog! Découvrez les dernières nouvelles et histoires.",
+            "contact": "Contactez-nous via le formulaire ci-dessous. Nous serions ravis de vous entendre!"
+        }
+    },
+    "es": {
+        "menu": {
+            "home": "Inicio",
+            "contact": "Contacto"
+        },
+        "sections": {
+            "home": "¡Bienvenido a nuestro blog! Explora las últimas actualizaciones e historias.",
+            "contact": "Contáctenos a través del formulario a continuación. ¡Nos encantaría saber de usted!"
+        }
+    }
+}

@@ -13,19 +13,20 @@
                 </div>
 
                 <!-- Standard Menu for Medium+ Screens -->
-                <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0">
+                <div v-if="currentTranslations.menu"
+                    class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0">
                     <nuxt-link :to="`/`" :class="[
                         'p-2 lg:px-4 md:mx-2 rounded transition-colors duration-300',
                         isActiveBasePath('') ? 'text-white bg-indigo-600' : 'text-gray-600 hover:bg-gray-200 hover:text-gray-700'
                     ]">
-                        Home
+                        {{ currentTranslations.menu.home || 'Loading...' }}
                     </nuxt-link>
 
                     <nuxt-link :to="`/contact`" :class="[
                         'p-2 lg:px-4 md:mx-2 rounded transition-colors duration-300',
                         isActiveBasePath('/contact') ? 'text-white bg-indigo-600' : 'text-gray-600 hover:bg-gray-200 hover:text-gray-700'
                     ]">
-                        Contact
+                        {{ currentTranslations.menu.contact || 'Loading...' }}
                     </nuxt-link>
 
                     <div class="flex items-center">
@@ -62,7 +63,7 @@
                             'block px-6 py-4 transition-colors duration-300',
                             isActiveBasePath('') ? 'text-indigo-600' : 'text-gray-600'
                         ]">
-                            Home
+                             {{ currentTranslations.menu.home || 'Loading...' }}
                         </nuxt-link>
                     </li>
                     <li>
@@ -70,7 +71,7 @@
                             'block px-6 py-4 transition-colors duration-300',
                             isActiveBasePath('/contact') ? 'text-indigo-600' : 'text-gray-600'
                         ]">
-                            Contact
+                             {{ currentTranslations.menu.contact || 'Loading...' }}
                         </nuxt-link>
                     </li>
                     <li>
@@ -192,10 +193,37 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
+import { useMenus } from '~/composables/useMenus';
+import { ref, computed, onMounted } from 'vue';
+
 
 const router = useRouter();
 const { locale } = useI18n();
 const isMenuOpen = ref(false);
+const translations = ref({});
+// const currentLanguage = ref('en');
+const loading = ref(true);
+const error = ref(null);
+
+
+// Fetch translations
+const fetchTranslations = async () => {
+    try {
+        const response = await useMenus(); // Fetch translations using useMenus
+        console.log("RESPONSE: ", response.de.menu.contact);
+
+        translations.value = response;    // Store the fetched translations
+    } catch (err) {
+        error.value = err.message;       // Handle fetch errors
+    } finally {
+        loading.value = false;           // Set loading to false after fetching
+    }
+};
+
+
+// Reactive current translations based on selected language
+const currentTranslations = computed(() => translations.value[locale.value] || {});
+
 
 // Toggle menu state
 const toggleMenu = () => {
@@ -205,27 +233,23 @@ const toggleMenu = () => {
 const isActiveBasePath = (basePath) => {
     // Extract the path after the language prefix
     const currentPath = router.currentRoute.value.path.replace(/^\/[a-z]{2}/, ''); // e.g., `/en/home` -> `/home`
-    console.log("Current Path: ", currentPath)
-    console.log("Base Path: ", basePath)
     return currentPath === basePath;
 };
 
-
 // Switch language and update the route
-
 const switchLanguage = (newLocale) => {
     const currentRoute = router.currentRoute.value;
 
     // Update Vue I18n locale
     locale.value = newLocale;
 
-    console.log("Switching language to:", newLocale);
-
-    // Update the route
+    // Update the route to reflect the new locale
     router.push({
         path: `/${newLocale}${currentRoute.fullPath.replace(/^\/[^/]+/, '')}`,
     });
 };
 
+
+onMounted(fetchTranslations); // Fetch translations on mount
 
 </script>

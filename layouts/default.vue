@@ -4,7 +4,7 @@
         <nav class="bg-white py-2 md:py-4 fixed top-0 left-0 w-full z-50">
             <div class="container px-4 mx-auto md:flex md:items-center">
                 <div class="flex justify-between items-center">
-                    <a href="#" class="font-bold text-xl text-indigo-600">e-Mission</a>
+                    <nuxt-link :to="`/en`" class="font-bold text-xl text-indigo-600">e-Mission</nuxt-link>
                     <button class="px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
                         id="navbar-toggle" @click="toggleMenu">
                         <font-awesome-icon icon="bars"
@@ -53,7 +53,7 @@
                 @click="toggleMenu"></div>
 
             <!-- Side Navigation for Small Screens -->
-            <div :class="[
+            <div v-if="currentTranslations.menu" :class="[
                 isMenuOpen ? 'translate-x-0' : '-translate-x-full',
                 'fixed top-0 left-0 z-50 w-64 h-full bg-white shadow-lg transition-transform duration-300 ease-in-out md:hidden'
             ]">

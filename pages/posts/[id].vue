@@ -29,9 +29,7 @@ const error = ref(null);
 const fetchPost = async () => {
     loading.value = true;
     try {
-        const response = await fetch('/posts.json');
-        if (!response.ok) throw new Error('Failed to fetch posts');
-        const posts = await response.json();
+        const posts = await usePosts();
         post.value = posts.find(p => p.id === parseInt(route.params.id));
         if (post.value) {
             post.value = {

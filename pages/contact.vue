@@ -1,45 +1,36 @@
 <template>
-    <div class="container mx-auto p-6">
-        <h1 class="text-3xl font-bold mb-6">{{ $t('contact') }}</h1>
-
-        <form @submit.prevent="submitForm" class="space-y-4">
-            <!-- Name Field -->
-            <div>
-                <label for="name" class="block text-sm font-medium">{{ $t('name') }}</label>
-                <input type="text" id="name" v-model="form.name" @input="validateField('name')"
-                    class="w-full p-2 border rounded-md" />
+    <div class="container mt-10 mx-auto p-6">
+        <div class="p-4 mx-auto max-w-xl bg-white font-[sans-serif]">
+            <h1 class="text-2xl text-gray-800 font-bold text-center">{{ $t('contact') }}</h1>
+            <form @submit.prevent="submitForm" class="mt-8 space-y-4">
+                <!-- Name Field -->
+                <input type="text" :placeholder="$t('name')" v-model="form.name" @input="validateField('name')"
+                    class="w-full py-2.5 px-4 text-gray-800 bg-gray-100 border focus:border-indigo-500 focus:bg-transparent text-sm outline-none transition-all" />
                 <p v-if="errors.name" class="text-red-500 text-sm">{{ errors.name }}</p>
-            </div>
 
-            <!-- Email Field -->
-            <div>
-                <label for="email" class="block text-sm font-medium">{{ $t('email') }}</label>
-                <input type="email" id="email" v-model="form.email" @input="validateField('email')"
-                    class="w-full p-2 border rounded-md" />
+                <!-- Email Field -->
+                <input type="email" :placeholder="$t('email')" v-model="form.email" @input="validateField('email')"
+                    class="w-full py-2.5 px-4 text-gray-800 bg-gray-100 border focus:border-indigo-500 focus:bg-transparent text-sm outline-none transition-all" />
                 <p v-if="errors.email" class="text-red-500 text-sm">{{ errors.email }}</p>
-            </div>
 
-            <!-- Phone Number Field -->
-            <div>
-                <label for="phone" class="block text-sm font-medium">{{ $t('phone') }}</label>
-                <input type="text" id="phone" v-model="form.phone" @input="validateField('phone')"
-                    class="w-full p-2 border rounded-md" />
+                <!-- Subject Field -->
+                <input type="text" :placeholder="$t('phone')" v-model="form.phone" @input="validateField('phone')"
+                    class="w-full py-2.5 px-4 text-gray-800 bg-gray-100 border focus:border-indigo-500 focus:bg-transparent text-sm outline-none transition-all" />
                 <p v-if="errors.phone" class="text-red-500 text-sm">{{ errors.phone }}</p>
-            </div>
 
-            <!-- Message Field -->
-            <div>
-                <label for="message" class="block text-sm font-medium">{{ $t('message') }}</label>
-                <textarea id="message" v-model="form.message" @input="validateField('message')"
-                    class="w-full p-2 border rounded-md" rows="4"></textarea>
+                <!-- Message Field -->
+                <textarea :placeholder="$t('message')" rows="4" v-model="form.message" @input="validateField('message')"
+                    class="w-full px-4 text-gray-800 bg-gray-100 border focus:border-indigo-500 focus:bg-transparent text-sm pt-3 outline-none transition-all"></textarea>
                 <p v-if="errors.message" class="text-red-500 text-sm">{{ errors.message }}</p>
-            </div>
 
-            <!-- Submit Button -->
-            <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
-                Submit
-            </button>
-        </form>
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="text-white bg-indigo-500 hover:bg-indigo-600 tracking-wide text-sm px-4 py-2.5 w-full outline-none">
+                    Send
+                </button>
+            </form>
+        </div>
+
     </div>
 </template>
 

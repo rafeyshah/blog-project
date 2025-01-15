@@ -58,7 +58,7 @@ A multilingual blog built with **Nuxt.js 3**, featuring **TailwindCSS**, **Googl
 
 ## Deployment
 The project is configured for static hosting on platforms like Vercel.
-[e Mission: Blog Website](https://blog-project-qk70kgq2y-syed-abdul-rafey-alis-projects.vercel.app/en)
+[e Mission: Blog Website](https://blog-project-puce-sigma.vercel.app/)
 
 
 Happy coding! 🚀

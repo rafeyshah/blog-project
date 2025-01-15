@@ -12,17 +12,28 @@
                 <div class="flex flex-wrap justify-between items-center mb-6 gap-4">
                     <!-- Left Side: Welcome -->
                     <h2
-                        class="font-manrope text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 w-full md:w-auto text-center md:text-left">
+                        class="font-manrope text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 w-full md:w-auto text-left">
                         {{ $t('welcome') }}
                     </h2>
 
                     <!-- Right Side: Search Bar -->
-                    <div class="w-full md:w-1/3">
-                        <input v-model="searchQuery" :placeholder="$t('searchPlaceholder')"
-                            class="w-full p-2 border rounded-md" />
+                    <div class="w-full lg:w-1/3 md:ml-auto">
+                        <label for="default-search"
+                            class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                            </div>
+                            <input v-model="searchQuery" :placeholder="$t('searchPlaceholder')" type="search"
+                                id="default-search"
+                                class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-indigo-500 focus:border-indigo-500 focus:outline-none" />
+                        </div>
                     </div>
                 </div>
-
                 <div
                     class="flex justify-center  gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
                     <div v-for="post in paginatedPosts" :key="post.id"
@@ -34,7 +45,8 @@
                             <span class="text-indigo-600 font-medium mb-3 block">Jan 01, 2023</span>
                             <h4 class="text-xl text-gray-900 font-medium leading-8 mb-5">{{
                                 post.title[$i18n.locale].slice(0, 30) }}</h4>
-                            <p class="text-gray-500 leading-6 mb-10">{{ post.content[$i18n.locale].slice(0, 50) }}...
+                            <p class="text-gray-500 leading-6 mb-10">{{ post.content[$i18n.locale].slice(0, 50)
+                                }}...
                             </p>
                             <nuxt-link :to="`/posts/${post.id}`"
                                 class="cursor-pointer text-lg text-indigo-600 font-semibold">

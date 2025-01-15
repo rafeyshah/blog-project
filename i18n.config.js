@@ -16,7 +16,17 @@ export default {
             name: 'Name',
             email: 'Email',
             phone: 'Phone',
-            message: 'Message'
+            message: 'Message',
+            validation: {
+                nameRequired: 'Name is required.',
+                invalidEmail: 'Please enter a valid email address.',
+                invalidPhone: 'Please enter a valid phone number (e.g., +1234567890).',
+                messageRequired: 'Message is required.'
+            },
+            form: {
+                success: 'Form submitted successfully!',
+                error: 'Please correct the errors in the form.'
+            }
         },
         fr: {
             welcome: 'Nos derniers blogs',
@@ -32,7 +42,17 @@ export default {
             name: 'Nom',
             email: 'Email',
             phone: 'Téléphone',
-            message: 'Message'
+            message: 'Message',
+            validation: {
+                nameRequired: 'Le nom est requis.',
+                invalidEmail: 'Veuillez saisir une adresse e-mail valide.',
+                invalidPhone: 'Veuillez saisir un numéro de téléphone valide (par exemple, +1234567890).',
+                messageRequired: 'Le message est requis.'
+            },
+            form: {
+                success: 'Formulaire soumis avec succès !',
+                error: 'Veuillez corriger les erreurs dans le formulaire.'
+            }
         },
         es: {
             welcome: 'Nuestros últimos blogs',
@@ -48,7 +68,17 @@ export default {
             name: 'Nombre',
             email: 'Correo electrónico',
             phone: 'Teléfono',
-            message: 'Mensaje'
+            message: 'Mensaje',
+            validation: {
+                nameRequired: 'El nombre es obligatorio.',
+                invalidEmail: 'Por favor, introduce una dirección de correo electrónico válida.',
+                invalidPhone: 'Por favor, introduce un número de teléfono válido (por ejemplo, +1234567890).',
+                messageRequired: 'El mensaje es obligatorio.'
+            },
+            form: {
+                success: '¡Formulario enviado con éxito!',
+                error: 'Por favor, corrige los errores en el formulario.'
+            }
         },
         de: {
             welcome: 'Unsere neuesten Blogs',
@@ -61,10 +91,20 @@ export default {
             noResults: 'Keine Beiträge entsprechen Ihrer Suche.',
             readMore: 'Weiterlesen',
             contact: 'Kontaktieren Sie uns',
-            name: "Name",
-            email: "Email",
-            phone: "Telefon",
-            message: "Nachricht"
+            name: 'Name',
+            email: 'Email',
+            phone: 'Telefon',
+            message: 'Nachricht',
+            validation: {
+                nameRequired: 'Der Name ist erforderlich.',
+                invalidEmail: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
+                invalidPhone: 'Bitte geben Sie eine gültige Telefonnummer ein (z. B. +1234567890).',
+                messageRequired: 'Die Nachricht ist erforderlich.'
+            },
+            form: {
+                success: 'Formular erfolgreich eingereicht!',
+                error: 'Bitte korrigieren Sie die Fehler im Formular.'
+            }
         }
     }
 };

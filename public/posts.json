@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "img": "https://pagedone.io/asset/uploads/1696244317.png",
         "title": {
             "en": "Getting Started with Nuxt.js",
             "fr": "Commencer avec Nuxt.js",
@@ -16,6 +17,7 @@
     },
     {
         "id": 2,
+        "img": "https://pagedone.io/asset/uploads/1696244340.png",
         "title": {
             "en": "Exploring TailwindCSS",
             "fr": "Explorer TailwindCSS",
@@ -31,6 +33,7 @@
     },
     {
         "id": 3,
+        "img": "https://pagedone.io/asset/uploads/1696244356.png",
         "title": {
             "en": "JavaScript Fundamentals",
             "fr": "Les fondamentaux de JavaScript",
@@ -38,14 +41,15 @@
             "de": "Grundlagen von JavaScript"
         },
         "content": {
-            "en": "JavaScript is the backbone of modern web development. Let's review the core concepts.",
-            "fr": "JavaScript est la colonne vertébrale du développement web moderne. Passons en revue les concepts fondamentaux.",
-            "es": "JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos.",
-            "de": "JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen."
+            "en": "JavaScript is the backbone of modern web development. Let's review the core concepts.JavaScript is the backbone of modern web development. Let's review the core concepts.JavaScript is the backbone of modern web development. Let's review the core concepts.JavaScript is the backbone of modern web development. Let's review the core concepts.JavaScript is the backbone of modern web development. Let's review the core concepts.JavaScript is the backbone of modern web development. Let's review the core concepts.JavaScript is the backbone of modern web development. Let's review the core concepts.JavaScript is the backbone of modern web development. Let's review the core concepts.JavaScript is the backbone of modern web development. Let's review the core concepts.JavaScript is the backbone of modern web development. Let's review the core concepts.JavaScript is the backbone of modern web development. Let's review the core concepts.JavaScript is the backbone of modern web development. Let's review the core concepts.",
+            "fr": "JavaScript est la colonne vertébrale du développement web moderne. Passons en revue les concepts fondamentaux. JavaScript est la colonne vertébrale du développement web moderne. Passons en revue les concepts fondamentauxJavaScript est la colonne vertébrale du développement web moderne. Passons en revue les concepts fondamentauxJavaScript est la colonne vertébrale du développement web moderne. Passons en revue les concepts fondamentauxJavaScript est la colonne vertébrale du développement web moderne. Passons en revue les concepts fondamentauxJavaScript est la colonne vertébrale du développement web moderne. Passons en revue les concepts fondamentauxJavaScript est la colonne vertébrale du développement web moderne. Passons en revue les concepts fondamentauxJavaScript est la colonne vertébrale du développement web moderne. Passons en revue les concepts fondamentauxJavaScript est la colonne vertébrale du développement web moderne. Passons en revue les concepts fondamentaux",
+            "es": "JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos. JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos.JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos.JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos.JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos.JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos.JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos.JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos.JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos.JavaScript es la columna vertebral del desarrollo web moderno. Revisemos los conceptos básicos.",
+            "de": "JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen. JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen.JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen.JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen.JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen.JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen.JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen.JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen.JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen.JavaScript ist das Rückgrat der modernen Webentwicklung. Lassen Sie uns die Kernkonzepte überprüfen."
         }
     },
     {
         "id": 4,
+        "img": "https://pagedone.io/asset/uploads/1696244356.png",
         "title": {
             "en": "Building Reusable Components in Vue.js",
             "fr": "Créer des composants réutilisables dans Vue.js",
@@ -53,14 +57,15 @@
             "de": "Erstellen wiederverwendbarer Komponenten in Vue.js"
         },
         "content": {
-            "en": "Learn how to create reusable components in Vue.js to build maintainable apps.",
-            "fr": "Apprenez à créer des composants réutilisables dans Vue.js pour construire des applications maintenables.",
-            "es": "Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.",
-            "de": "Erfahren Sie, wie Sie wiederverwendbare Komponenten in Vue.js erstellen, um wartbare Apps zu entwickeln."
+            "en": "Learn how to create reusable components in Vue.js to build maintainable apps. Learn how to create reusable components in Vue.js to build maintainable apps.Learn how to create reusable components in Vue.js to build maintainable apps.Learn how to create reusable components in Vue.js to build maintainable apps.Learn how to create reusable components in Vue.js to build maintainable apps.Learn how to create reusable components in Vue.js to build maintainable apps.Learn how to create reusable components in Vue.js to build maintainable apps.Learn how to create reusable components in Vue.js to build maintainable apps.Learn how to create reusable components in Vue.js to build maintainable apps.Learn how to create reusable components in Vue.js to build maintainable apps.Learn how to create reusable components in Vue.js to build maintainable apps.Learn how to create reusable components in Vue.js to build maintainable apps.Learn how to create reusable components in Vue.js to build maintainable apps.",
+            "fr": "Apprenez à créer des composants réutilisables dans Vue.js pour construire des applications maintenables. Apprenez à créer des composants réutilisables dans Vue.js pour construire des applications maintenables.Apprenez à créer des composants réutilisables dans Vue.js pour construire des applications maintenables.Apprenez à créer des composants réutilisables dans Vue.js pour construire des applications maintenables.Apprenez à créer des composants réutilisables dans Vue.js pour construire des applications maintenables.Apprenez à créer des composants réutilisables dans Vue.js pour construire des applications maintenables.Apprenez à créer des composants réutilisables dans Vue.js pour construire des applications maintenables.Apprenez à créer des composants réutilisables dans Vue.js pour construire des applications maintenables.Apprenez à créer des composants réutilisables dans Vue.js pour construire des applications maintenables.",
+            "es": "Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles. Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.Aprenda a crear componentes reutilizables en Vue.js para construir aplicaciones sostenibles.",
+            "de": "Erfahren Sie, wie Sie wiederverwendbare Komponenten in Vue.js erstellen, um wartbare Apps zu entwickeln. Erfahren Sie, wie Sie wiederverwendbare Komponenten in Vue.js erstellen, um wartbare Apps zu entwickeln.Erfahren Sie, wie Sie wiederverwendbare Komponenten in Vue.js erstellen, um wartbare Apps zu entwickeln.Erfahren Sie, wie Sie wiederverwendbare Komponenten in Vue.js erstellen, um wartbare Apps zu entwickeln.Erfahren Sie, wie Sie wiederverwendbare Komponenten in Vue.js erstellen, um wartbare Apps zu entwickeln.Erfahren Sie, wie Sie wiederverwendbare Komponenten in Vue.js erstellen, um wartbare Apps zu entwickeln.Erfahren Sie, wie Sie wiederverwendbare Komponenten in Vue.js erstellen, um wartbare Apps zu entwickeln.Erfahren Sie, wie Sie wiederverwendbare Komponenten in Vue.js erstellen, um wartbare Apps zu entwickeln.Erfahren Sie, wie Sie wiederverwendbare Komponenten in Vue.js erstellen, um wartbare Apps zu entwickeln."
         }
     },
     {
         "id": 5,
+        "img": "https://pagedone.io/asset/uploads/1696244340.png",
         "title": {
             "en": "State Management with Vuex",
             "fr": "Gestion d'état avec Vuex",
@@ -68,14 +73,15 @@
             "de": "Zustandsverwaltung mit Vuex"
         },
         "content": {
-            "en": "Managing application state effectively is crucial. Vuex offers a powerful solution.",
-            "fr": "Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.",
-            "es": "Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa.",
-            "de": "Das effektive Verwalten des Anwendungszustands ist entscheidend. Vuex bietet eine leistungsstarke Lösung."
+            "en": "Managing application state effectively is crucial. Vuex offers a powerful solution. Managing application state effectively is crucial. Vuex offers a powerful solution.Managing application state effectively is crucial. Vuex offers a powerful solution.Managing application state effectively is crucial. Vuex offers a powerful solution.Managing application state effectively is crucial. Vuex offers a powerful solution.Managing application state effectively is crucial. Vuex offers a powerful solution.Managing application state effectively is crucial. Vuex offers a powerful solution.Managing application state effectively is crucial. Vuex offers a powerful solution.Managing application state effectively is crucial. Vuex offers a powerful solution.Managing application state effectively is crucial. Vuex offers a powerful solution.Managing application state effectively is crucial. Vuex offers a powerful solution.Managing application state effectively is crucial. Vuex offers a powerful solution.",
+            "fr": "Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante. Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.Gérer efficacement l'état des applications est crucial. Vuex offre une solution puissante.",
+            "es": "Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa. Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa.Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa.Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa.Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa.Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa.Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa.Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa.Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa.Gestionar el estado de la aplicación de manera efectiva es crucial. Vuex ofrece una solución poderosa.",
+            "de": "Das effektive Verwalten des Anwendungszustands ist entscheidend. Vuex bietet eine leistungsstarke Lösung. Das effektive Verwalten des Anwendungszustands ist entscheidend. Vuex bietet eine leistungsstarke Lösung.Das effektive Verwalten des Anwendungszustands ist entscheidend. Vuex bietet eine leistungsstarke Lösung.Das effektive Verwalten des Anwendungszustands ist entscheidend. Vuex bietet eine leistungsstarke Lösung.Das effektive Verwalten des Anwendungszustands ist entscheidend. Vuex bietet eine leistungsstarke Lösung.Das effektive Verwalten des Anwendungszustands ist entscheidend. Vuex bietet eine leistungsstarke Lösung.Das effektive Verwalten des Anwendungszustands ist entscheidend. Vuex bietet eine leistungsstarke Lösung.Das effektive Verwalten des Anwendungszustands ist entscheidend. Vuex bietet eine leistungsstarke Lösung.Das effektive Verwalten des Anwendungszustands ist entscheidend. Vuex bietet eine leistungsstarke Lösung."
         }
     },
     {
         "id": 6,
+        "img": "https://pagedone.io/asset/uploads/1696244317.png",
         "title": {
             "en": "Deploying Nuxt.js Applications",
             "fr": "Déployer des applications Nuxt.js",
@@ -83,14 +89,15 @@
             "de": "Bereitstellung von Nuxt.js-Anwendungen"
         },
         "content": {
-            "en": "Deploying a Nuxt.js app can be tricky. This guide will simplify the process.",
-            "fr": "Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.",
-            "es": "Desplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el proceso.",
-            "de": "Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess."
+            "en": "Deploying a Nuxt.js app can be tricky. This guide will simplify the process. Deploying a Nuxt.js app can be tricky. This guide will simplify the process.Deploying a Nuxt.js app can be tricky. This guide will simplify the process.Deploying a Nuxt.js app can be tricky. This guide will simplify the process.Deploying a Nuxt.js app can be tricky. This guide will simplify the process.Deploying a Nuxt.js app can be tricky. This guide will simplify the process.Deploying a Nuxt.js app can be tricky. This guide will simplify the process.Deploying a Nuxt.js app can be tricky. This guide will simplify the process.Deploying a Nuxt.js app can be tricky. This guide will simplify the process.Deploying a Nuxt.js app can be tricky. This guide will simplify the process.Deploying a Nuxt.js app can be tricky. This guide will simplify the process.Deploying a Nuxt.js app can be tricky. This guide will simplify the process.Deploying a Nuxt.js app can be tricky. This guide will simplify the process.",
+            "fr": "Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus. Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.Déployer une application Nuxt.js peut être délicat. Ce guide simplifiera le processus.",
+            "es": "Desplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el proceso. Desplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el procesoDesplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el procesoDesplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el procesoDesplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el procesoDesplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el procesoDesplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el procesoDesplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el procesoDesplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el procesoDesplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el procesoDesplegar una aplicación Nuxt.js puede ser complicado. Esta guía simplificará el proceso",
+            "de": "Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess. Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess.Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess.Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess.Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess.Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess.Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess.Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess.Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess.Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess.Die Bereitstellung einer Nuxt.js-App kann knifflig sein. Dieser Leitfaden vereinfacht den Prozess."
         }
     },
     {
         "id": 7,
+        "img": "https://pagedone.io/asset/uploads/1696244356.png",
         "title": {
             "en": "Understanding the Composition API",
             "fr": "Comprendre l'API Composition",
@@ -106,6 +113,7 @@
     },
     {
         "id": 8,
+        "img": "https://pagedone.io/asset/uploads/1696244356.png",
         "title": {
             "en": "Introduction to Server-Side Rendering",
             "fr": "Introduction au rendu côté serveur",
@@ -121,6 +129,7 @@
     },
     {
         "id": 9,
+        "img": "https://pagedone.io/asset/uploads/1696244356.png",
         "title": {
             "en": "Working with Nuxt Middleware",
             "fr": "Travailler avec le middleware Nuxt",
@@ -136,6 +145,39 @@
     },
     {
         "id": 10,
+        "img": "https://pagedone.io/asset/uploads/1696244356.png",
+        "title": {
+            "en": "Integrating APIs in Nuxt.js",
+            "fr": "Intégrer des APIs dans Nuxt.js",
+            "es": "Integrar APIs en Nuxt.js",
+            "de": "APIs in Nuxt.js integrieren"
+        },
+        "content": {
+            "en": "Connecting your Nuxt app to APIs opens endless possibilities. Here's how to get started.",
+            "fr": "Connecter votre application Nuxt à des APIs ouvre des possibilités infinies. Voici comment commencer.",
+            "es": "Conectar tu aplicación Nuxt a APIs abre posibilidades infinitas. Aquí tienes cómo empezar.",
+            "de": "Das Verbinden Ihrer Nuxt-App mit APIs eröffnet endlose Möglichkeiten. Hier erfahren Sie, wie Sie anfangen können."
+        }
+    },
+    {
+        "id": 11,
+        "img": "https://pagedone.io/asset/uploads/1696244356.png",
+        "title": {
+            "en": "Integrating APIs in Nuxt.js",
+            "fr": "Intégrer des APIs dans Nuxt.js",
+            "es": "Integrar APIs en Nuxt.js",
+            "de": "APIs in Nuxt.js integrieren"
+        },
+        "content": {
+            "en": "Connecting your Nuxt app to APIs opens endless possibilities. Here's how to get started.",
+            "fr": "Connecter votre application Nuxt à des APIs ouvre des possibilités infinies. Voici comment commencer.",
+            "es": "Conectar tu aplicación Nuxt a APIs abre posibilidades infinitas. Aquí tienes cómo empezar.",
+            "de": "Das Verbinden Ihrer Nuxt-App mit APIs eröffnet endlose Möglichkeiten. Hier erfahren Sie, wie Sie anfangen können."
+        }
+    },
+    {
+        "id": 12,
+        "img": "https://pagedone.io/asset/uploads/1696244356.png",
         "title": {
             "en": "Integrating APIs in Nuxt.js",
             "fr": "Intégrer des APIs dans Nuxt.js",

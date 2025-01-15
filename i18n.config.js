@@ -3,9 +3,9 @@ export default {
     locale: 'en',
     messages: {
         en: {
-            welcome: 'Welcome to My Blog',
+            welcome: 'Our latest blogs',
             searchPlaceholder: 'Search posts...',
-            previous: 'Previous',
+            previous: 'Prev',
             next: 'Next',
             page: 'Page',
             of: 'of',
@@ -19,7 +19,7 @@ export default {
             message: 'Message'
         },
         fr: {
-            welcome: 'Bienvenue sur Mon Blog',
+            welcome: 'Nos derniers blogs',
             searchPlaceholder: 'Rechercher des articles...',
             previous: 'Précédent',
             next: 'Suivant',
@@ -35,7 +35,7 @@ export default {
             message: 'Message'
         },
         es: {
-            welcome: 'Bienvenido a Mi Blog',
+            welcome: 'Nuestros últimos blogs',
             searchPlaceholder: 'Buscar publicaciones...',
             previous: 'Anterior',
             next: 'Siguiente',
@@ -51,7 +51,7 @@ export default {
             message: 'Mensaje'
         },
         de: {
-            welcome: 'Willkommen auf meinem Blog',
+            welcome: 'Unsere neuesten Blogs',
             searchPlaceholder: 'Beiträge suchen...',
             previous: 'Vorherige',
             next: 'Nächste',

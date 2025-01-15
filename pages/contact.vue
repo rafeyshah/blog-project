@@ -1,11 +1,11 @@
 <template>
     <div class="container mx-auto p-6">
-        <h1 class="text-3xl font-bold mb-6">Contact Us</h1>
+        <h1 class="text-3xl font-bold mb-6">{{ $t('contact') }}</h1>
 
         <form @submit.prevent="submitForm" class="space-y-4">
             <!-- Name Field -->
             <div>
-                <label for="name" class="block text-sm font-medium">Name</label>
+                <label for="name" class="block text-sm font-medium">{{ $t('name') }}</label>
                 <input type="text" id="name" v-model="form.name" @input="validateField('name')"
                     class="w-full p-2 border rounded-md" />
                 <p v-if="errors.name" class="text-red-500 text-sm">{{ errors.name }}</p>
@@ -13,7 +13,7 @@
 
             <!-- Email Field -->
             <div>
-                <label for="email" class="block text-sm font-medium">Email</label>
+                <label for="email" class="block text-sm font-medium">{{ $t('email') }}</label>
                 <input type="email" id="email" v-model="form.email" @input="validateField('email')"
                     class="w-full p-2 border rounded-md" />
                 <p v-if="errors.email" class="text-red-500 text-sm">{{ errors.email }}</p>
@@ -21,7 +21,7 @@
 
             <!-- Phone Number Field -->
             <div>
-                <label for="phone" class="block text-sm font-medium">Phone Number</label>
+                <label for="phone" class="block text-sm font-medium">{{ $t('phone') }}</label>
                 <input type="text" id="phone" v-model="form.phone" @input="validateField('phone')"
                     class="w-full p-2 border rounded-md" />
                 <p v-if="errors.phone" class="text-red-500 text-sm">{{ errors.phone }}</p>
@@ -29,7 +29,7 @@
 
             <!-- Message Field -->
             <div>
-                <label for="message" class="block text-sm font-medium">Message</label>
+                <label for="message" class="block text-sm font-medium">{{ $t('message') }}</label>
                 <textarea id="message" v-model="form.message" @input="validateField('message')"
                     class="w-full p-2 border rounded-md" rows="4"></textarea>
                 <p v-if="errors.message" class="text-red-500 text-sm">{{ errors.message }}</p>
@@ -45,6 +45,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 const form = ref({
     name: '',

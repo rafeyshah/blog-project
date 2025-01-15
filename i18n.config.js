@@ -11,7 +11,12 @@ export default {
             of: 'of',
             backToHome: 'Back to Home',
             noResults: 'No posts match your search.',
-            readMore: 'Read More'
+            readMore: 'Read More',
+            contact: 'Contact us',
+            name: 'Name',
+            email: 'Email',
+            phone: 'Phone',
+            message: 'Message'
         },
         fr: {
             welcome: 'Bienvenue sur Mon Blog',
@@ -22,7 +27,12 @@ export default {
             of: 'de',
             backToHome: 'Retour à l’accueil',
             noResults: 'Aucun article ne correspond à votre recherche.',
-            readMore: 'Lire la suite'
+            readMore: 'Lire la suite',
+            contact: 'Contactez-nous',
+            name: 'Nom',
+            email: 'Email',
+            phone: 'Téléphone',
+            message: 'Message'
         },
         es: {
             welcome: 'Bienvenido a Mi Blog',
@@ -33,7 +43,12 @@ export default {
             of: 'de',
             backToHome: 'Volver al inicio',
             noResults: 'No hay publicaciones que coincidan con tu búsqueda.',
-            readMore: 'Leer más'
+            readMore: 'Leer más',
+            contact: 'Contacta con nosotros',
+            name: 'Nombre',
+            email: 'Correo electrónico',
+            phone: 'Teléfono',
+            message: 'Mensaje'
         },
         de: {
             welcome: 'Willkommen auf meinem Blog',
@@ -44,7 +59,12 @@ export default {
             of: 'von',
             backToHome: 'Zurück zur Startseite',
             noResults: 'Keine Beiträge entsprechen Ihrer Suche.',
-            readMore: 'Weiterlesen'
+            readMore: 'Weiterlesen',
+            contact: 'Kontaktieren Sie uns',
+            name: "Name",
+            email: "Email",
+            phone: "Telefon",
+            message: "Nachricht"
         }
     }
 };

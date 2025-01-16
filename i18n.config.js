@@ -17,6 +17,7 @@ export default {
             email: 'Email',
             phone: 'Phone',
             message: 'Message',
+            send: 'Submit',
             validation: {
                 nameRequired: 'Name is required.',
                 invalidEmail: 'Please enter a valid email address.',
@@ -43,6 +44,7 @@ export default {
             email: 'Email',
             phone: 'Téléphone',
             message: 'Message',
+            send: 'Soumettre',
             validation: {
                 nameRequired: 'Le nom est requis.',
                 invalidEmail: 'Veuillez saisir une adresse e-mail valide.',
@@ -68,6 +70,7 @@ export default {
             name: 'Nombre',
             email: 'Correo electrónico',
             phone: 'Teléfono',
+            send: 'Entregar',
             message: 'Mensaje',
             validation: {
                 nameRequired: 'El nombre es obligatorio.',
@@ -95,6 +98,7 @@ export default {
             email: 'Email',
             phone: 'Telefon',
             message: 'Nachricht',
+            send: 'Enreichen',
             validation: {
                 nameRequired: 'Der Name ist erforderlich.',
                 invalidEmail: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.',

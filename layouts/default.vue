@@ -79,7 +79,7 @@ const currentTranslations = computed(() => translations.value[locale.value] || {
 const menuItems = computed(() => {
     const menu = currentTranslations.value.menu || {};
     return [
-        { path: '/', label: menu.home || t('home'), active: isActiveBasePath('/') },
+        { path: '/', label: menu.home || t('home'), active: isActiveBasePath('/') || isActiveBasePath('') },
         { path: '/contact', label: menu.contact || t('contact'), active: isActiveBasePath('/contact') },
     ];
 });

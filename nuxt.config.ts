@@ -2,8 +2,10 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n'],
   css: ['~/styles/tailwind.css'],
-  plugins: ['~/plugins/vue-gtag.client.ts', '~/plugins/fontawesome.js'],
-
+  plugins: [
+    '~/plugins/vue-gtag.client.ts', // Client-side only
+    '~/plugins/fontawesome.js', // Universal
+  ],
   target: 'static', // Use 'static' for static hosting or 'server' for SSR
   ssr: true, // Set to true for server-side rendering
   build: {
